@@ -1,10 +1,14 @@
 @echo off
 setlocal
-cd /d "%~dp0"
-cd ..
-if not exist ".venv" ( py -m venv .venv )
-call .venv\Scripts\activate.bat
+chcp 65001 >nul
+cd /d "%~dp0\.."
+if not exist "venv" (
+  echo [setup] Create venv
+  py -m venv venv
+)
+call venv\Scripts\activate.bat
 python -m pip install -U pip >nul
 pip install -r tools\requirements.txt
-start "" ".venv\Scripts\pythonw.exe" "src\pdf_manager_app.py"
+echo [run] Launching app...
+start "" "%cd%\venv\Scripts\pythonw.exe" "%cd%\src\pdf_manager_app.py"
 endlocal
