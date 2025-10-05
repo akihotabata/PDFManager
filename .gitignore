@@ -1,0 +1,12 @@
+# 仮想環境
+venv/
+
+# ビルド成果物
+build/
+dist/
+__pycache__/
+*.spec
+
+# 一時ファイル
+*.log
+*.tmp
