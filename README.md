@@ -80,10 +80,6 @@ pyinstaller --noconsole --onefile --name "PDF結合ツール" --icon=icon.ico sr
 
 詳細手順は「docs/EXE化手順書_Windows.md」を参照。
 
----
-
-## 作者
-Akio Tabata (田畑 晃央)
 
 ---
 
