@@ -29,6 +29,7 @@ Python と PySide6 を用いて構築され、直感的な UI で誰でも簡単
 
 ## ディレクトリ構成
 
+```
 PDFManager/
 ├─ src/
 │  └─ pdf_merger_app.py          # メインアプリケーション
@@ -46,6 +47,7 @@ PDFManager/
 ├─ .gitignore
 ├─ LICENSE
 └─ README.md                     # このファイル（メイン）
+```
 
 ---
 
